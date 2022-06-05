@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Employee Information</title>
+  </head>
+  <center>
+    <font color="black" size="4" style="font-family: avenir">
+      <h1 style="color: DodgerBlue">Employee Database</h1>
+
+      <body bgcolor="lightgrey">
+        <form
+          action="/addemp"
+          autocomplete="on"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <button
+            type="submit"
+            formaction="./GetEmp.html"
+            style="
+              background: rgb(196, 147, 147);
+              height: 45px;
+              width: 200px;
+              color: white;
+              font: oblique;
+            "
+          >
+            GET EMPLOYEE INFORMATION</button
+          ><br /><br />
+
+          Name:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: rgb(200, 45, 45)"
+            type="text"
+            name="ename"
+            autofocus
+            size="20"
+          /><br /><br />
+
+          Email:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: rgb(181, 33, 33)"
+            type="text"
+            name="email"
+          /><br /><br />
+
+          Phone Number:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: grey"
+            type="text"
+            name="ephno"
+          /><br /><br />
+
+          Experience:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: grey"
+            type="number"
+            name="exp"
+          /><br /><br />
+
+          Aptitude Score:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: grey"
+            type="number"
+            name="apt"
+          /><br /><br />
+
+          Group Discussion Score:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: grey"
+            type="number"
+            name="gdscore"
+          /><br /><br />
+
+          HR Score:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: grey"
+            type="number"
+            name="hrscore"
+          /><br /><br />
+
+          Location:<br />
+          <input
+            style="height: 25px; font-size: 14pt; color: grey"
+            type="text"
+            name="location"
+          /><br /><br />
+
+          Resume:
+          <input
+            type="file"
+            name="emp_resume"
+            style="height: 25px; font-size: 14pt; color: grey"
+          />
+          <br /><br />
+
+          <button
+            type="submit"
+            style="
+              background: grey;
+              height: 45px;
+              width: 200px;
+              color: white;
+              size: 5;
+              font: oblique;
+            "
+          >
+            UPDATE DATABASE
+          </button>
+        </form>
+        <a href="/about">About Us</a>
+      </body>
+    </font>
+  </center>
+</html>
