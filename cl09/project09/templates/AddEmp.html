@@ -3,30 +3,31 @@
   <head>
     <title>Add Employee Information</title>
   </head>
+  <style>
+    body{
+      background:url('../Office\ worker\ examining\ money\ with\ magnifying\ glass.jpg');
+      background-size:cover;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .resume-text{
+      font-weight: bold;
+    }
+   
+  </style>
   <center>
-    <font color="black" size="4" style="font-family: avenir">
-      <h1 style="color: DodgerBlue">Employee Database</h1>
+    <font color="black" size="4" style="font-family:'Times New Roman', Times, serif'">
+      <h1 style="color:black"><b>WE ARE HIRING!</b></h1>
 
       <body bgcolor="lightgrey">
         <form
+          class="formcontainer"
           action="/addemp"
           autocomplete="on"
           method="POST"
           enctype="multipart/form-data"
         >
-          <button
-            type="submit"
-            formaction="./GetEmp.html"
-            style="
-              background: rgb(196, 147, 147);
-              height: 45px;
-              width: 200px;
-              color: white;
-              font: oblique;
-            "
-          >
-            GET EMPLOYEE INFORMATION</button
-          ><br /><br />
 
           Name:<br />
           <input
@@ -34,6 +35,7 @@
             type="text"
             name="ename"
             autofocus
+            required
             size="20"
           /><br /><br />
 
@@ -42,6 +44,7 @@
             style="height: 25px; font-size: 14pt; color: rgb(181, 33, 33)"
             type="text"
             name="email"
+            required
           /><br /><br />
 
           Phone Number:<br />
@@ -49,6 +52,9 @@
             style="height: 25px; font-size: 14pt; color: grey"
             type="text"
             name="ephno"
+            required
+            minlength="10"
+            maxlength="10"
           /><br /><br />
 
           Experience:<br />
@@ -56,6 +62,7 @@
             style="height: 25px; font-size: 14pt; color: grey"
             type="number"
             name="exp"
+            required
           /><br /><br />
 
           Aptitude Score:<br />
@@ -63,6 +70,7 @@
             style="height: 25px; font-size: 14pt; color: grey"
             type="number"
             name="apt"
+            required
           /><br /><br />
 
           Group Discussion Score:<br />
@@ -70,6 +78,7 @@
             style="height: 25px; font-size: 14pt; color: grey"
             type="number"
             name="gdscore"
+            required
           /><br /><br />
 
           HR Score:<br />
@@ -77,6 +86,7 @@
             style="height: 25px; font-size: 14pt; color: grey"
             type="number"
             name="hrscore"
+            required
           /><br /><br />
 
           Location:<br />
@@ -84,31 +94,50 @@
             style="height: 25px; font-size: 14pt; color: grey"
             type="text"
             name="location"
+            required
           /><br /><br />
 
           Resume:
           <input
+            class="resume-text"
             type="file"
             name="emp_resume"
-            style="height: 25px; font-size: 14pt; color: grey"
+            required
+            style="height: 25px; font-size: 14pt; color: rgb(0, 0, 0)"
           />
-          <br /><br />
+          <br/><br />
 
           <button
             type="submit"
             style="
-              background: grey;
+              background: rgb(248, 235, 235);
               height: 45px;
-              width: 200px;
+              width: 230px;
               color: white;
-              size: 5;
               font: oblique;
+              font-size: large;
+              color: black;
             "
           >
             UPDATE DATABASE
           </button>
+          <button
+            type="submit"
+            formaction=""
+            style="
+              background: rgb(248, 235, 235);
+              height: 45px;
+              width: 230px;
+              color: white;
+              font: oblique;
+              font-size: large;
+              color: black;
+            "
+          </button>
+          
+            STATUS CHECK</button
+          ><br /><br />
         </form>
-        <a href="/about">About Us</a>
       </body>
     </font>
   </center>
