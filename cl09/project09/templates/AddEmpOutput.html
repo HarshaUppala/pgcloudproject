@@ -5,6 +5,7 @@
 	 body{
       background:url('../Office\ worker\ examining\ money\ with\ magnifying\ glass.jpg');
       background-size:cover;
+	  background-color: rgb(143, 182, 178);
       font-weight: bold;
       font-size: 1rem;
 	  font-family: 'Times New Roman', Times, serif;
@@ -27,7 +28,11 @@
 			<h1>SAVE SUCCESSFUL</h1><br>
 			<h2>Following Employee has been added to the database</h2><br>
 			<h2>{{ name }}</h2><br>
-			<div>
+			<div class="formcontainer"
+			action="/retemp"
+			autocomplete="on"
+			method="GET"
+			enctype="multipart/form-data">
 
 				Name:<br> {{ ename }} <br><br>
 
@@ -47,7 +52,7 @@
 
 			</div>
 			<title>Add Emp Output</title>
-				<form action="http://52.66.209.90" autocomplete="on" method = "GET">
+				<form action="http://3.110.184.1" autocomplete="on" method = "GET">
 
 					<button type="submit"">GO BACK</button><br><br>
 
